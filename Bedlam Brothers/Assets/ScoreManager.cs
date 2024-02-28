@@ -18,12 +18,12 @@ public class ScoreManager : MonoBehaviour
     public Text remainingTimeText;
     public Text totalScoreText;
 
-    int deliveredScore = 0;
-    int cleanlinessScore = 0;
-    int cleanlinessPercent = 0;
-    int durabilityScore = 0;
-    int durabilityPercent = 0;
-    int timeScore = 0;
+    public static int deliveredScore = 0;
+    public static int cleanlinessScore = 0;
+    public static int cleanlinessPercent = 0;
+    public static int durabilityScore = 0;
+    public static int durabilityPercent = 0;
+    public static int timeScore = 0;
     Timer remainingTime;
     int totalScore = 0;
     // Start is called before the first frame update
