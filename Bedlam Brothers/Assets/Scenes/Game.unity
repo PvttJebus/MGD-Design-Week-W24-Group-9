@@ -254,7 +254,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -854.39, y: -196.17}
+  m_AnchoredPosition: {x: -854.39, y: -196.41989}
   m_SizeDelta: {x: 9.7986, y: 2.7949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &80365940
@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 124215824}
   - component: {fileID: 124215826}
   - component: {fileID: 124215825}
-  m_Layer: 1
+  m_Layer: 0
   m_Name: Tilemap_Overlay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,8 +359,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2019403083
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -520,9 +520,9 @@ Tilemap:
       e12: 5.55e-43
       e13: 5.55e-43
       e20: -1.9417802e-22
-      e21: -3553328
-      e22: -7.127371e-29
-      e23: -4.95489e-10
+      e21: -2.753173e-35
+      e22: -7.449136e-29
+      e23: -4.954126e-10
       e30: 4.5904e-41
       e31: 5.58e-43
       e32: 5.55e-43
@@ -545,7 +545,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
-    m_Data: {r: 3.8701e-41, g: 3.8701e-41, b: 3.8701e-41, a: 3.8701e-41}
+    m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 334231913}
   - component: {fileID: 334231912}
   - component: {fileID: 334231911}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,8 +1005,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 931483691
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: faad11b357db859468b263da0718fd40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1168,8 +1168,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 931483691
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: faad11b357db859468b263da0718fd40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1253,8 +1253,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1389645083
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1412,9 +1412,9 @@ Tilemap:
       e12: 5.55e-43
       e13: 5.55e-43
       e20: -1.9417802e-22
-      e21: -3553292
-      e22: -3.5742275e-28
-      e23: -4.815419e-10
+      e21: -2.7531593e-35
+      e22: -9.6115315e-29
+      e23: -4.9664983e-10
       e30: 4.5904e-41
       e31: 5.58e-43
       e32: 5.55e-43
@@ -1437,12 +1437,12 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
-    m_Data: {r: 3.598e-41, g: 3.598e-41, b: 3.598e-41, a: 3.598e-41}
+    m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -19, y: -4, z: 0}
-  m_Size: {x: 21, y: 14, z: 1}
+  m_Origin: {x: -20, y: -4, z: 0}
+  m_Size: {x: 22, y: 14, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1561,7 +1561,7 @@ RectTransform:
   - {fileID: 304365684}
   - {fileID: 851987143}
   - {fileID: 1589237364}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1843300392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1691,6 +1691,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7638591}
+  - {fileID: 1534405794}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928268238
@@ -1764,8 +1765,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -899318451
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1935,8 +1936,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 931483691
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: aeb121db85cfe434eaf23cbe7c7ee062, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1959,4 +1960,3 @@ SceneRoots:
   - {fileID: 2014338546}
   - {fileID: 334231913}
   - {fileID: 1843300392}
-  - {fileID: 1534405794}
