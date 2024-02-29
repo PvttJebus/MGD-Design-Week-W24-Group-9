@@ -22,37 +22,37 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         //transform.position = transform.position + (Vector3.down * moveSpeed) * Time.deltaTime;
-        if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.RightArrow))
         {
             transform.position = transform.position + (Vector3.down * moveSpeed) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.G) && Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position = transform.position + (Vector3.up * moveSpeed) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.R) && Input.GetKey(KeyCode.DownArrow))
         {
             transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.F) && Input.GetKey(KeyCode.UpArrow))
         {
             transform.position = transform.position + (Vector3.right * moveSpeed) * Time.deltaTime;
         }
         // Rotation Player 1 target
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Z))
         {
             transform.RotateAround(playerOneTarget.transform.position, Vector3.back, maxTurnSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.R))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             transform.RotateAround(playerOneTarget.transform.position, Vector3.forward, maxTurnSpeed * Time.deltaTime);
         }
         // Rotation Player 2 target
-        if (Input.GetKey(KeyCode.Y))
+        if (Input.GetKey(KeyCode.I))
         {
             transform.RotateAround(playerTwoTarget.transform.position, Vector3.back, maxTurnSpeed * Time.deltaTime);
         }
-        if (Input.GetKey(KeyCode.I))
+        if (Input.GetKey(KeyCode.W))
         {
             transform.RotateAround(playerTwoTarget.transform.position, Vector3.forward, maxTurnSpeed * Time.deltaTime);
         }

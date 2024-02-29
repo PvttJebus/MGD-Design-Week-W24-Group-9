@@ -8,6 +8,7 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Threading;
 
+
 public class startGame : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -17,9 +18,9 @@ public class startGame : MonoBehaviour
     //public AudioSource audioSource;
     void Start()
     {
-        
-        Button btn = yourButton.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
+
+        //Button btn = yourButton.GetComponent<Button>();
+        //btn.onClick.AddListener(TaskOnClick);
         //scenePaths = myLoadedAssetBundle.GetAllScenePaths();
     }
     int randoNum = 0;
@@ -27,7 +28,17 @@ public class startGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.L))
+        {
+            TaskOnClick();
+
+        }
+        if (Input.GetKey(KeyCode.V))
+        {
+            TaskOnClick();
+
+        }
+        //
     }
 
     void TaskOnClick()

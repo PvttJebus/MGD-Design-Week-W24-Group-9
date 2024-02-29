@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 20f;
+        time = 50000000000000f;
         remainingTime = time;
         
         InvokeRepeating("IncrementTime", 1, 1);
