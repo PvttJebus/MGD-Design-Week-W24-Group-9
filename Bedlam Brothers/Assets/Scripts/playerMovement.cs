@@ -1,21 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 using static UnityEngine.GraphicsBuffer;
 
+
+
 public class playerMovement : MonoBehaviour
 {
+    public InputAction playerControls;
     public float moveSpeed = 1;
     public GameObject playerOneTarget;
     public GameObject playerTwoTarget;
     public Transform objectToLookAt;
     public float maxTurnSpeed = 50;
 
+    private void OnEnable()
+    {
+        playerControls.Enable();
+
+    }
+    private void OnDisable()
+    {
+        playerControls.Disable();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
