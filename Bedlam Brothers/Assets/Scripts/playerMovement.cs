@@ -41,20 +41,20 @@ public class playerMovement : MonoBehaviour
         // Rotation Player 1 target
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.RotateAround(playerOneTarget.transform.position, Vector3.back, 20 * Time.deltaTime);
+            transform.RotateAround(playerOneTarget.transform.position, Vector3.back, maxTurnSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.R))
         {
-            transform.RotateAround(playerOneTarget.transform.position, Vector3.forward, 20 * Time.deltaTime);
+            transform.RotateAround(playerOneTarget.transform.position, Vector3.forward, maxTurnSpeed * Time.deltaTime);
         }
         // Rotation Player 2 target
         if (Input.GetKey(KeyCode.Y))
         {
-            transform.RotateAround(playerTwoTarget.transform.position, Vector3.back, 20 * Time.deltaTime);
+            transform.RotateAround(playerTwoTarget.transform.position, Vector3.back, maxTurnSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.I))
         {
-            transform.RotateAround(playerTwoTarget.transform.position, Vector3.forward, 20 * Time.deltaTime);
+            transform.RotateAround(playerTwoTarget.transform.position, Vector3.forward, maxTurnSpeed * Time.deltaTime);
         }
     }
 }
