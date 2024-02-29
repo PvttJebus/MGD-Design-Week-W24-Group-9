@@ -18,29 +18,21 @@ public class ScoreManager : MonoBehaviour
     public Text remainingTimeText;
     public Text totalScoreText;
 
-    public static int deliveredScore = 0;
-    public static int cleanlinessScore = 0;
-    public static int cleanlinessPercent = 0;
-    public static int durabilityScore = 0;
-    public static int durabilityPercent = 0;
-    public static int timeScore = 0;
-    Timer remainingTime;
-    int totalScore = 0;
     // Start is called before the first frame update
     void Start()
     {
         
-        deliveredScoreText.text = "Delivery Complete = " + deliveredScore.ToString() + " Points";
-        cleanlinessScoreText.text = cleanlinessPercent.ToString() + "% " + "Cleanliness = " + cleanlinessScore.ToString() + " Points";
-        durabilityScoreText.text = durabilityPercent.ToString() + "% " + "Bed Durability = " + durabilityScore.ToString() + " Points";
-        timeScoreText.text = remainingTime.ToString() + " Remaining = " + timeScore.ToString() + " Points";
-        totalScoreText.text = "Total Score = " + totalScore.ToString() + " Points";
-        gameComplete = true;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        deliveredScoreText.text = "Delivery Complete = " + globalVariables.deliveryScore.ToString() + " Points";
+        cleanlinessScoreText.text = globalVariables.cleanliness.ToString() + "% " + "Cleanliness = " + globalVariables.cleanlinessPoints.ToString() + " Points";
+        durabilityScoreText.text = globalVariables.durability.ToString() + "% " + "Bed Durability = " + globalVariables.durabiityPoints.ToString() + " Points";
+        timeScoreText.text = globalVariables.timeLeft.ToString() + " Seconds Remaining = " + globalVariables.timePoints.ToString() + " Points";
+        totalScoreText.text = "Total Score = " + globalVariables.totalScore.ToString() + " Points";
+        gameComplete = true;
     }
 }
