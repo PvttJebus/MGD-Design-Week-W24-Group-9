@@ -26,7 +26,7 @@ public class publicVariables : MonoBehaviour
 public static class globalVariables
 {
     public static int minLevels = 1;
-    public static int maxLevels = 4;
+    public static int maxLevels = 6;
     public static float score = 0;
     public static bool currentGameCompleted = false;
     public static float timeLeft = 0;

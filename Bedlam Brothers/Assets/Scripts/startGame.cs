@@ -51,7 +51,7 @@ public class startGame : MonoBehaviour
         Debug.Log("You have clicked the button!");
         Debug.Log(globalVariables.mapCounter);
 
-        if (globalVariables.mapCounter >= 3 )
+        if (globalVariables.mapCounter >= 5 )
         {
             Debug.Log("here");
             SceneManager.LoadScene("CompletedGame", LoadSceneMode.Single);
