@@ -16,20 +16,21 @@ public class PlayerCollision : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.tag != "Tilemap_CollionWalls")
+        /*if (collision = "Walls")
         {
             globalVariables.durability -= 1;
         }
         else
         {
             globalVariables.cleanliness -= 1;
-        }
-        
-        
+        }*/
+
+
         Debug.Log("Collision!");
 
     }
+
 
 }
