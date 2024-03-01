@@ -38,6 +38,9 @@ public static class globalVariables
     public static float totalrunscore = 0;
     public static int[] levels = new int[globalVariables.maxLevels+1];
     public static int mapCounter = 0;
+    public static double footCounter = 0;
+    public static bool playSound = false;
+    
 
 
 
