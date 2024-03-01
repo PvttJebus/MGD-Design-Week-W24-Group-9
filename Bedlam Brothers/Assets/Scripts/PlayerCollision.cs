@@ -16,7 +16,7 @@ public class PlayerCollision : MonoBehaviour
         
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         /*if (collision = "Walls")
         {
