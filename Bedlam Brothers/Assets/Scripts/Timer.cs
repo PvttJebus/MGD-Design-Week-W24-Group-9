@@ -13,12 +13,11 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 20f;
+        time = 180f;
         remainingTime = time;
         
         InvokeRepeating("IncrementTime", 1, 1);
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -48,7 +47,6 @@ public class Timer : MonoBehaviour
             globalVariables.totalrunscore = globalVariables.totalrunscore + globalVariables.totalScore;
         }
     }
-
     public void IncrementTime ()
     {
         time = time - 1;

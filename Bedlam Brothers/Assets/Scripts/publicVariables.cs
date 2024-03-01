@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class publicVariables : MonoBehaviour
 {
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +21,6 @@ public class publicVariables : MonoBehaviour
         
     }
 }
-
 public static class globalVariables
 {
     public static int minLevels = 1;
