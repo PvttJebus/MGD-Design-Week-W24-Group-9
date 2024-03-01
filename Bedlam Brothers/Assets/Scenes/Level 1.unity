@@ -3576,9 +3576,13 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 294
     m_Data: {fileID: 11400000, guid: 83fde3027ff028643ab28f23fd946add, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 294
     m_Data: {fileID: 21300000, guid: 2acd766698286f641811dfd9a8eed9a0, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 294
     m_Data:
@@ -4172,6 +4176,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720b7b8f2f77db648ab3aaa934bf24c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerControls:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 372abcd7-4f36-45bd-b211-c8d61448f7df
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
   moveSpeed: 5
   playerOneTarget: {fileID: 192370376}
   playerTwoTarget: {fileID: 1105787399}
