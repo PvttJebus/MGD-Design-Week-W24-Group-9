@@ -357,7 +357,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
+  m_UpdateRectTransformForStandalone: 1
   m_SortingLayerID: -899318451
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -24269,7 +24269,7 @@ SpriteRenderer:
   m_SortingLayerID: 931483691
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6ae42bc5620fc374ba257d5467801985, type: 3}
+  m_Sprite: {fileID: 21300000, guid: de4e06cd3e1e57b47901756ef4d42d7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
