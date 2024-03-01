@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 139647085}
   - component: {fileID: 139647087}
   - component: {fileID: 139647086}
+  - component: {fileID: 139647088}
   m_Layer: 5
   m_Name: Durability Score
   m_TagString: Untagged
@@ -412,6 +413,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139647084}
   m_CullTransparentMesh: 1
+--- !u!114 &139647088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139647084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b53be438946b247b5e2cd68a9930b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durabilityText: {fileID: 139647086}
 --- !u!1 &179715653
 GameObject:
   m_ObjectHideFlags: 0
@@ -27342,6 +27356,7 @@ GameObject:
   - component: {fileID: 1347085925}
   - component: {fileID: 1347085927}
   - component: {fileID: 1347085926}
+  - component: {fileID: 1347085928}
   m_Layer: 5
   m_Name: Cleanliness Score
   m_TagString: Untagged
@@ -27410,6 +27425,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347085924}
   m_CullTransparentMesh: 1
+--- !u!114 &1347085928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347085924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a80b47a243948a14ba4711f72a2ee8f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cleanlinessText: {fileID: 1347085926}
 --- !u!1 &1510055124
 GameObject:
   m_ObjectHideFlags: 0
