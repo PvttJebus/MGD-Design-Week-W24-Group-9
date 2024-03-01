@@ -18,6 +18,7 @@ public class Timer : MonoBehaviour
         
         InvokeRepeating("IncrementTime", 1, 1);
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -34,7 +35,7 @@ public class Timer : MonoBehaviour
             globalVariables.timeLeft = 0;
             globalVariables.timePoints = 0;
             globalVariables.deliveryScore = 0;
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(4);
         }
         if (globalVariables.currentGameCompleted == true)
         {
@@ -47,6 +48,7 @@ public class Timer : MonoBehaviour
             globalVariables.totalrunscore = globalVariables.totalrunscore + globalVariables.totalScore;
         }
     }
+
     public void IncrementTime ()
     {
         time = time - 1;

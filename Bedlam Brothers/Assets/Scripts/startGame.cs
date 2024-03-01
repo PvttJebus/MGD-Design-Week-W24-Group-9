@@ -40,6 +40,7 @@ public class startGame : MonoBehaviour
         }
         //
     }
+
     void TaskOnClick()
     {
         if (globalVariables.mapCounter == 0)
@@ -50,7 +51,7 @@ public class startGame : MonoBehaviour
         Debug.Log("You have clicked the button!");
         Debug.Log(globalVariables.mapCounter);
 
-        if (globalVariables.mapCounter > 5 )
+        if (globalVariables.mapCounter >= 5 )
         {
             Debug.Log("here");
             SceneManager.LoadScene("CompletedGame", LoadSceneMode.Single);
@@ -73,6 +74,9 @@ public class startGame : MonoBehaviour
             return;
         }
         
+
+
+
         while (true)
         {
             randoNum = random.Next(globalVariables.minLevels, globalVariables.maxLevels);
@@ -108,5 +112,6 @@ public class startGame : MonoBehaviour
         globalVariables.timeLeft = 0;
         globalVariables.timePoints = 0;
         globalVariables.score = 0;
+        
     }
 }
