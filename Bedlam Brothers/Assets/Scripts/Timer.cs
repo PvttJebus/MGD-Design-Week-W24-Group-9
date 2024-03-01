@@ -13,7 +13,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 180f;
+        time = 20f;
         remainingTime = time;
         
         InvokeRepeating("IncrementTime", 1, 1);
@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
             globalVariables.timeLeft = 0;
             globalVariables.timePoints = 0;
             globalVariables.deliveryScore = 0;
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
         }
         if (globalVariables.currentGameCompleted == true)
         {
