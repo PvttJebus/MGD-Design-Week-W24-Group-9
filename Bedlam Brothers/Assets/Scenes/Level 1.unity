@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 192370378}
   - component: {fileID: 192370379}
   - component: {fileID: 192370380}
+  - component: {fileID: 192370381}
   m_Layer: 3
   m_Name: Player 1
   m_TagString: Untagged
@@ -538,6 +539,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &192370381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192370376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db24ff24343e4be42bef2e3d1d68664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &509716097
 GameObject:
   m_ObjectHideFlags: 0
@@ -6649,7 +6662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerControls:
-    m_Name: 
+    m_Name: Player Controls
     m_Type: 0
     m_ExpectedControlType: 
     m_Id: 372abcd7-4f36-45bd-b211-c8d61448f7df
@@ -22731,6 +22744,7 @@ GameObject:
   - component: {fileID: 1105787400}
   - component: {fileID: 1105787402}
   - component: {fileID: 1105787403}
+  - component: {fileID: 1105787404}
   m_Layer: 3
   m_Name: Player 2
   m_TagString: Untagged
@@ -22877,6 +22891,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1105787404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105787399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db24ff24343e4be42bef2e3d1d68664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1329324634
 GameObject:
   m_ObjectHideFlags: 0
@@ -23590,6 +23616,7 @@ GameObject:
   - component: {fileID: 2144927531}
   - component: {fileID: 2144927534}
   - component: {fileID: 2144927533}
+  - component: {fileID: 2144927535}
   m_Layer: 3
   m_Name: Matress
   m_TagString: Untagged
@@ -23786,6 +23813,20 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &2144927535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144927528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1802156aa69547c4ebdd102cc7e973d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDuribility: 100
+  currentDuribility: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
