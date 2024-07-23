@@ -8,17 +8,11 @@ public class publicVariables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int b = 1; b < globalVariables.maxLevels+1; b++)
+        for (int b = 1; b < globalVariables.maxLevels + 1; b++)
         {
-            Debug.Log("B="+ b);
+            Debug.Log("B=" + b);
             globalVariables.levels[b] = b;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
 public static class globalVariables
@@ -36,12 +30,8 @@ public static class globalVariables
     public static float durabiityPoints = 0;
     public static float totalScore = 0;
     public static float totalrunscore = 0;
-    public static int[] levels = new int[globalVariables.maxLevels+1];
+    public static int[] levels = new int[globalVariables.maxLevels + 1];
     public static int mapCounter = 0;
     public static double footCounter = 0;
     public static bool playSound = false;
-    
-
-
-
 }
