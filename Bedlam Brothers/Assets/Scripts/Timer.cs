@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         if (time > -1)
         {
             remainingTime = time;
-            gametime.text = time.ToString();
+            gametime.text = time.ToString() + " Seconds";
         }
         if (time <= 0)
         {
