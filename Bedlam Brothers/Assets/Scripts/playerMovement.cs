@@ -6,19 +6,14 @@ using static UnityEngine.GraphicsBuffer;
 
 public class playerMovement : MonoBehaviour
 {
-    public float moveSpeed = 1;
     public GameObject playerOneTarget;
     public GameObject playerTwoTarget;
     public Transform objectToLookAt;
+
+    [Header("Speed Variables")]
+    public float moveSpeed = 1;
     public float maxTurnSpeed = 50;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         //transform.position = transform.position + (Vector3.down * moveSpeed) * Time.deltaTime;

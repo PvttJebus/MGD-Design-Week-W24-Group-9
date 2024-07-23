@@ -11,11 +11,9 @@ using System.Threading;
 
 public class startGame : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Button yourButton;
     private AssetBundle myLoadedAssetBundle;
     private string[] scenePaths;
-    //public AudioSource audioSource;
     void Start()
     {
 
@@ -25,7 +23,6 @@ public class startGame : MonoBehaviour
     }
     int randoNum = 0;
     int counter = 0;
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKey(KeyCode.L))

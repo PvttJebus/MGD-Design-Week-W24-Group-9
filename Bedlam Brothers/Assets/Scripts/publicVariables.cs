@@ -15,12 +15,6 @@ public class publicVariables : MonoBehaviour
             globalVariables.levels[b] = b;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
 
 public static class globalVariables

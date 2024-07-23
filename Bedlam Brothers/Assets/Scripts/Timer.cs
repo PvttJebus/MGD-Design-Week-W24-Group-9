@@ -10,7 +10,6 @@ public class Timer : MonoBehaviour
     public Text gametime;
     public float remainingTime;
     
-    // Start is called before the first frame update
     void Start()
     {
         time = 120f;
@@ -19,7 +18,6 @@ public class Timer : MonoBehaviour
         InvokeRepeating("IncrementTime", 1, 1);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (time > -1)
