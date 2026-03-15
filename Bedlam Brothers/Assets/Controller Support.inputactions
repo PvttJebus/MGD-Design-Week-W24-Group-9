@@ -7,18 +7,18 @@
             "actions": [
                 {
                     "name": "P1 - Move",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "3b54d4c9-a2bc-4f5d-aa1d-c9339604791a",
-                    "expectedControlType": "Stick",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 },
                 {
                     "name": "P2 - Move",
-                    "type": "PassThrough",
+                    "type": "Button",
                     "id": "51cb8b78-4754-4d3c-abec-2cdc1cac476a",
-                    "expectedControlType": "Stick",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -95,7 +95,7 @@
                 {
                     "name": "up",
                     "id": "9f25614a-1e29-41e4-9d35-9c620edfa364",
-                    "path": "<Keyboard>/g",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -106,7 +106,7 @@
                 {
                     "name": "down",
                     "id": "2b323374-28df-48c3-b604-b0a3c0a8b8df",
-                    "path": "<Keyboard>/d",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -117,7 +117,7 @@
                 {
                     "name": "left",
                     "id": "1edecb83-5639-4475-aea9-94d9f36f9e83",
-                    "path": "<Keyboard>/r",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -128,7 +128,7 @@
                 {
                     "name": "right",
                     "id": "0e971bd5-be66-432f-a0d2-8145330c8a63",
-                    "path": "<Keyboard>/f",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -161,7 +161,7 @@
                 {
                     "name": "up",
                     "id": "08388a4e-b3a6-44be-9fa6-c30246c59a40",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -172,7 +172,7 @@
                 {
                     "name": "down",
                     "id": "05080c60-bae4-41fc-9e02-7037c0062d89",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -183,7 +183,7 @@
                 {
                     "name": "left",
                     "id": "524a3350-6c9c-49ea-a7a0-02e806f0adb6",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -194,7 +194,7 @@
                 {
                     "name": "right",
                     "id": "e8a06afd-66b7-42dc-ad48-cba7b309edd6",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -216,7 +216,7 @@
                 {
                     "name": "",
                     "id": "fb46cf69-841b-4324-9c22-66788cf7b33f",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -238,7 +238,7 @@
                 {
                     "name": "",
                     "id": "f201d90d-bf02-4ba0-9f26-65b6ca338ff9",
-                    "path": "<Keyboard>/leftShift",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -260,7 +260,7 @@
                 {
                     "name": "",
                     "id": "fb068eb3-038c-4ec7-9b7b-a859c9936a8b",
-                    "path": "<Keyboard>/i",
+                    "path": "<Keyboard>/leftBracket",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -282,7 +282,7 @@
                 {
                     "name": "",
                     "id": "86ae3fa1-5dfe-442f-82ac-4a88b0bb2755",
-                    "path": "<Keyboard>/w",
+                    "path": "<Keyboard>/rightBracket",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -315,7 +315,7 @@
                 {
                     "name": "",
                     "id": "8f07d081-8227-42ec-bfd1-009f265c5b4f",
-                    "path": "<Keyboard>/l",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -326,39 +326,11 @@
                 {
                     "name": "",
                     "id": "064f485c-45ca-4c2e-b562-6e7dac7b5320",
-                    "path": "<Keyboard>/v",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Start",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "New action map",
-            "id": "31c35464-a583-4db2-b40d-e691540196d1",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "c074c5c9-1700-4871-8974-129b9bf0c0a4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "99fa0b81-a1db-46a4-b116-6de30357e925",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

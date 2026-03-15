@@ -28,32 +28,78 @@ public class startGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.L))
+        if (Input.GetKey(KeyCode.Space))
         {
-            TaskOnClick();
+            Startbackup();
 
         }
-        if (Input.GetKey(KeyCode.V))
+        if (Input.GetKey(KeyCode.KeypadEnter))
         {
-            TaskOnClick();
+            Startbackup();
 
         }
         //
     }
-    void TaskOnClick()
+    
+    public void Startbackup()
     {
-        if (globalVariables.mapCounter == 0)
         {
-            globalVariables.totalrunscore = 0;
-        }
-        System.Random random = new System.Random();
-        Debug.Log("You have clicked the button!");
-        Debug.Log(globalVariables.mapCounter);
+            if (globalVariables.mapCounter == 0)
+            {
+                globalVariables.totalrunscore = 0;
+            }
+            System.Random random = new System.Random();
+            Debug.Log("You have clicked the button!");
+            Debug.Log(globalVariables.mapCounter);
 
-        if (globalVariables.mapCounter > 5 )
-        {
-            Debug.Log("here");
-            SceneManager.LoadScene("CompletedGame", LoadSceneMode.Single);
+            if (globalVariables.mapCounter > 5)
+            {
+                Debug.Log("here");
+                SceneManager.LoadScene("CompletedGame", LoadSceneMode.Single);
+                globalVariables.cleanliness = 100;
+                globalVariables.cleanlinessPoints = 0;
+                globalVariables.durability = 100;
+                globalVariables.durabiityPoints = 0;
+                globalVariables.deliveryScore = 0;
+                globalVariables.totalScore = 0;
+                globalVariables.currentGameCompleted = false;
+                globalVariables.timeLeft = 0;
+                globalVariables.timePoints = 0;
+                globalVariables.score = 0;
+                globalVariables.mapCounter = 0;
+                for (int b = 1; b < globalVariables.maxLevels + 1; b++)
+                {
+                    Debug.Log("B=" + b);
+                    globalVariables.levels[b] = b;
+                }
+                return;
+            }
+
+            while (true)
+            {
+                randoNum = random.Next(globalVariables.minLevels, globalVariables.maxLevels);
+                //Debug.Log("Random Num" + randoNum);
+                if (globalVariables.levels[randoNum] != 0)
+                {
+                    //Debug.Log("Selected a random map");
+                    globalVariables.levels[randoNum] = 0;
+                    break;
+                }
+                if (globalVariables.mapCounter == globalVariables.maxLevels - 1)
+                {
+                    //Debug.Log("Selected all the maps!");
+                    break;
+                }
+                counter++;
+                if (counter == 50)
+                {
+                    break;
+                }
+
+            }
+            globalVariables.levels[randoNum] = 0;
+            globalVariables.mapCounter++;
+            SceneManager.LoadScene("Level " + randoNum, LoadSceneMode.Single);
             globalVariables.cleanliness = 100;
             globalVariables.cleanlinessPoints = 0;
             globalVariables.durability = 100;
@@ -64,49 +110,6 @@ public class startGame : MonoBehaviour
             globalVariables.timeLeft = 0;
             globalVariables.timePoints = 0;
             globalVariables.score = 0;
-            globalVariables.mapCounter = 0;
-            for (int b = 1; b < globalVariables.maxLevels + 1; b++)
-            {
-                Debug.Log("B=" + b);
-                globalVariables.levels[b] = b;
-            }
-            return;
         }
-        
-        while (true)
-        {
-            randoNum = random.Next(globalVariables.minLevels, globalVariables.maxLevels);
-            //Debug.Log("Random Num" + randoNum);
-            if (globalVariables.levels[randoNum] != 0)
-            {
-                //Debug.Log("Selected a random map");
-                globalVariables.levels[randoNum] = 0;
-                break;
-            }
-            if (globalVariables.mapCounter == globalVariables.maxLevels-1)
-            {
-                //Debug.Log("Selected all the maps!");
-                break;
-            }
-            counter++;
-            if (counter == 50)
-            {
-                break;
-            }
-
-        }
-        globalVariables.levels[randoNum] = 0;
-        globalVariables.mapCounter++;
-        SceneManager.LoadScene("Level " + randoNum, LoadSceneMode.Single);
-        globalVariables.cleanliness = 100;
-        globalVariables.cleanlinessPoints = 0;
-        globalVariables.durability = 100;
-        globalVariables.durabiityPoints = 0;
-        globalVariables.deliveryScore = 0;
-        globalVariables.totalScore = 0;
-        globalVariables.currentGameCompleted = false;
-        globalVariables.timeLeft = 0;
-        globalVariables.timePoints = 0;
-        globalVariables.score = 0;
     }
 }

@@ -7,8 +7,6 @@ public class ScoreManager : MonoBehaviour
 {
 
     public bool gameComplete = false;
-
-   Timer Timer = new Timer();
     public Text deliveredScoreText;
     public Text cleanlinessScoreText;
     public Text cleanlinessPercentText;

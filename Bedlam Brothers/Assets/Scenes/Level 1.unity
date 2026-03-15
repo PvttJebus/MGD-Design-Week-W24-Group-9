@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9228,15 +9227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720b7b8f2f77db648ab3aaa934bf24c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerControls:
-    m_Name: Player Controls
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 372abcd7-4f36-45bd-b211-c8d61448f7df
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
   source: {fileID: 566786920}
   moveSpeed: 5
   playerOneTarget: {fileID: 192370376}
@@ -9666,7 +9656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34509802, g: 0.3548309, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
