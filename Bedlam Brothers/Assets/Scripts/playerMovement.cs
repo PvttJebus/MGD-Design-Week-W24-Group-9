@@ -22,11 +22,19 @@ public class playerMovement : MonoBehaviour
 
     private void Awake()
     {
-        
+        if (controls == null)
+        {
+            controls = new ControllerSupport();
+        }
     }
 
     private void OnEnable()
     {
+        if (controls == null)
+        {
+            controls = new ControllerSupport();
+        }
+
         controls.Enable();
 
         controls.Gameplay.P1Move.performed += OnP1Move;
@@ -50,6 +58,10 @@ public class playerMovement : MonoBehaviour
 
     private void OnDisable()
     {
+        if (controls == null)
+        {
+            return;
+        }
         controls.Gameplay.P1Move.performed -= OnP1Move;
         controls.Gameplay.P1Move.canceled -= OnP1Move;
 
@@ -73,6 +85,11 @@ public class playerMovement : MonoBehaviour
 
     private void OnDestroy()
     {
+        if (controls != null)
+        {
+            controls.Dispose();
+            controls = null;
+        }
         controls.Dispose();
     }
 

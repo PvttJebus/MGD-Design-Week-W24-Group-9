@@ -131,7 +131,7 @@ public partial class @ControllerSupport: IInputActionCollection2, IDisposable
                     ""name"": ""P2 - Rotate Left"",
                     ""type"": ""Button"",
                     ""id"": ""fd40b032-ff44-4131-934a-e6eddc0b441a"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -140,7 +140,7 @@ public partial class @ControllerSupport: IInputActionCollection2, IDisposable
                     ""name"": ""P2 - Rotate Right"",
                     ""type"": ""Button"",
                     ""id"": ""515e2c3e-8f16-4437-bfca-d8afcc440bd2"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false

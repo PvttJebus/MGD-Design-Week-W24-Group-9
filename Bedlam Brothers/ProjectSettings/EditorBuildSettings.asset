@@ -32,4 +32,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CompletedGame.unity
     guid: 3ff0ec4cf2214e74a8303fe9e219c943
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 1c532150f5d3fe54db4cd1dfcff43675, type: 3}
